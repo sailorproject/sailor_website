@@ -7,7 +7,7 @@ function main.index(page)
 	--	local file = io.open("/var/www/sailor-emails.txt", "a")
 	--	file:write(page.POST['your-email'].."\r\n")
 	--	file:close()
-        mail.send_essage("<dalcol@etiene.net>","Yay! Somebody is interested!","This is the email: "..page.POST['your-email'])
+        mail.send_message("<dalcol@etiene.net>","Yay! Somebody is interested!","This is the email: "..page.POST['your-email'])
     end
     page:render('index')
 end
