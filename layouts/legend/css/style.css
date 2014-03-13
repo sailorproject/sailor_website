@@ -522,8 +522,7 @@ article.post {
 	float:left;
 }
 .doc{
-	float:right;
-	width: 55em;
+	padding: 0px 20px;
 }
 article .inside {
 	padding: 1em;

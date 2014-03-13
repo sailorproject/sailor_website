@@ -9,9 +9,29 @@
   .post li{
     margin-left: 25px;
   }
+  .post{
+    margin-left: 20px !important;
+    float: left;
+    width: 17em !important;
+    margin-right: 0;
+  }
+  .doc{
+    padding: 0 20px;
+    width: 52em;
+    float:right;
+  }
+  @media (max-width: 767px) {
+    .doc{
+      width: auto;
+      padding: 0 10px;
+    }
+    .post{
+      width: 19em !important;
+    }
+  }
 </style>
 <section id="services" class="single-page scrollblock">
-  <div class="container">
+  <div class="container" style:"margin-top: -20px">
     <a name="overview" class="anchor">&nbsp;</a>
     <h2>Overview</h2>
 
@@ -37,43 +57,47 @@
       <!-- /.inside -->
     </article>
     <div class="doc">
-    <a name="dirtree" class="anchor">&nbsp;</a>
-    <h3>Directory tree info</h3>
-    <p>
-    <code>/conf</code> - configuration files, open and edit them.<br/>
-    <code>/controllers</code> - controllers you will make!<br/>
-    <code>/doc</code> - this one is supposed to have documentation.<br/>
-    <code>/layouts</code> - default layout files. </br>
-    <code>/models</code> - models you will make!.<br/>
-    <code>/src</code> - Lua modules with nice stuff from sailor and other places.<br/>
-    <code>/views</code> - this is where your lua pages in .lp will go.
-    </p>
-    <a name="installation" class="anchor">&nbsp;</a>
-    <h3>Installation</h3>
-    <p>
-      If you don't have it already, install Lua. Sailor is compatible with both 5.1 and 5.2.<br/>
-      <pre>apt-get install lua5.2</pre><br/>
-      Install apache2.4<br/>
-      <pre>apt-get install apache2</pre><br/>
-      Some systems install apache2.2 by default, as Ubuntu, for example. You can get 2.4 by<br/>
-      <pre>
-apt-add-repository ppa:ptn107/apache</br>
-apt-get update</br>
-apt-get install apache2
-      </pre>
-      <br/>
-      Then you can finally install mod_lua for Apache.</br>
-      <pre>a2enmod lua </pre></br>
-      Open <code>/etc/apache2/mods-enabled/lua.load </code> and add at the end of file</br>
+      <a name="dirtree" class="anchor">&nbsp;</a>
+      <h3>Directory tree info</h3>
+      <p>
+      <code>/conf</code> - configuration files, open and edit them.<br/>
+      <code>/controllers</code> - controllers you will make!<br/>
+      <code>/doc</code> - this one is supposed to have documentation.<br/>
+      <code>/layouts</code> - default layout files. </br>
+      <code>/models</code> - models you will make!.<br/>
+      <code>/src</code> - Lua modules with nice stuff from sailor and other places.<br/>
+      <code>/views</code> - this is where your lua pages in .lp will go.
+      </p>
+      <a name="installation" class="anchor">&nbsp;</a>
+    </div>
+    <div class="doc">
+      <h3>Installation</h3>
+      <p>
+        If you don't have it already, install Lua. Sailor is compatible with both 5.1 and 5.2.<br/>
+        <pre>apt-get install lua5.2</pre><br/>
+        Install apache2.4<br/>
+        <pre>apt-get install apache2</pre><br/>
+        Some systems install apache2.2 by default, as Ubuntu, for example. You can get 2.4 by<br/>
+        <pre>
+  apt-add-repository ppa:ptn107/apache</br>
+  apt-get update</br>
+  apt-get install apache2
+        </pre>
+        <br/>
+        Then you can finally install mod_lua for Apache.</br>
+        <pre>a2enmod lua </pre></br>
+        Open <code>/etc/apache2/mods-enabled/lua.load </code> and add at the end of file</br>
 
-      <pre>AddHandler lua-script .lua </pre>
-      <br/>
-      Now you are ready to go!</br>
+        <pre>AddHandler lua-script .lua </pre>
+        <br/>
+        Now you are ready to go!</br>
 
-      <pre>service apache2 restart</pre></br>
-      Clone the contents of this repository to the dir apache is reading from and access it at localhost/sailor.</br>
-    </p>
-    <a name="modeldep" class="anchor">&nbsp;</a>
+        <pre>service apache2 restart</pre></br>
+        Clone the contents of this repository to the dir apache is reading from and access it at localhost/sailor.</br>
+      </p>
+      <a name="modeldep" class="anchor">&nbsp;</a>
+    </div>
+    <div class="doc">
     <h3>Dependencies for persisting models</h3>
     <p>
       If you want to save your models in a database, you will need LuaSQL. I believe it should work with every db LuaSQL supports but so far I have only tested with MySQL. Install luarocks and get these rocks. LuaSQL-MySQL requires you to have mysql installed.</br>

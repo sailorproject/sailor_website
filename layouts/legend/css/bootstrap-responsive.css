@@ -871,9 +871,9 @@
  padding: 0;
 }
  .navbar .brand {
- padding-right: 10px;
- padding-left: 25%;
- margin: -5px 0;
+ //padding-right: 10px;
+ //padding-left: 25%;
+ //margin: -5px 0;
 }
  .nav-collapse {
  clear: both;
