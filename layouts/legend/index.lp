@@ -1,9 +1,14 @@
 <!-- This layout was based on http://www.dzyngiri.com/legend-free-responsive-one-page-template/ open source layout. Thank you! -->
+<style>
+    p { 
+        text-align: justify;
+    }
+</style>
 <!DOCCTYPE HTML>
     <html lang="en">
     <head>
     <meta charset="utf-8">
-    <title>Sailor! A Lua MVC Framework</title>
+    <title>Sailor! A Lua MVC Framework - About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -14,7 +19,7 @@
     <link href="layouts/legend/css/fontello.css" type="text/css" rel="stylesheet">
     <!--[if lt IE 7]>
             <link href="layouts/legend/css/fontello-ie7.css" type="text/css" rel="stylesheet">  
-        <![endif]--/>
+        <![endif]-->
     <!-- Google Web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
@@ -30,18 +35,17 @@
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="layouts/legend/js/jquery.js"></script>
     <!-- Load ScrollTo -->
-    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="layouts/legend/js/jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
-    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="layouts/legend/js/jquery.localscroll-1.2.7-min.js"></script>
     <!-- prettyPhoto Initialization -->
     <script type="text/javascript" charset="utf-8">
           $(document).ready(function(){
             $("a[rel^='prettyPhoto']").prettyPhoto();
           }); 
-        </script>
-
+    </script>
     <meta name="description" content="We will bring a powerful and light programming language to its full potential as the foundation of a fast, fully functional and simple to use web development framework.
 Sailor will be completely free to use and open source."/>
     </head>
@@ -49,16 +53,18 @@ Sailor will be completely free to use and open source."/>
  
     <!--******************** NAVBAR ********************-->
     <?lua page:include('/layouts/legend/navbar',{}) ?>
+    <!-- /.navbar-wrapper -->
     <div id="top">
       
     </div>
-
- 
-    <!-- ******************** HeaderWrap ********************-->
+    <!--******************** Inside page ********************-->
     {{content}}
+    <!--******************** Contact Section ********************-->
+
     <hr>
+
     <?lua page:include("/layouts/legend/footer",{}) ?>
-  </body>
+</body>
 </html>
 
 

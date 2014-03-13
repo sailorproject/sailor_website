@@ -721,12 +721,12 @@
 }
  @media (max-width: 767px) {
  body {
- padding-right: 20px;
- padding-left: 20px;
+ //padding-right: 20px;
+ //padding-left: 20px;
 }
  .navbar-fixed-top,  .navbar-fixed-bottom,  .navbar-static-top {
- margin-right: -20px;
- margin-left: -20px;
+ //margin-right: -20px;
+ //margin-left: -20px;
 }
  .container-fluid {
  padding: 0;
@@ -872,7 +872,7 @@
 }
  .navbar .brand {
  padding-right: 10px;
- padding-left: 10px;
+ padding-left: 25%;
  margin: -5px 0;
 }
  .nav-collapse {

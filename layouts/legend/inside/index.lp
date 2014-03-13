@@ -16,7 +16,7 @@
     <link href="layouts/legend/css/bootstrap.css" rel="stylesheet">
     <link href="layouts/legend/css/style.css" rel="stylesheet">
     <link rel='stylesheet' id='prettyphoto-css'  href="layouts/legend/css/prettyPhoto.css" type='text/css' media='all'>
-    <link href="layouts/legendcss/fontello.css" type="text/css" rel="stylesheet">
+    <link href="layouts/legend/css/fontello.css" type="text/css" rel="stylesheet">
     <!--[if lt IE 7]>
             <link href="layouts/legend/css/fontello-ie7.css" type="text/css" rel="stylesheet">  
         <![endif]-->
@@ -34,7 +34,18 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-
+    <!-- JQuery -->
+    <script type="text/javascript" src="layouts/legend/js/jquery.js"></script>
+    <!-- Load ScrollTo -->
+    <script type="text/javascript" src="layouts/legend/js/jquery.scrollTo-1.4.2-min.js"></script>
+    <!-- Load LocalScroll -->
+    <script type="text/javascript" src="layouts/legend/js/jquery.localscroll-1.2.7-min.js"></script>
+    <!-- prettyPhoto Initialization -->
+    <script type="text/javascript" charset="utf-8">
+          $(document).ready(function(){
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+          }); 
+    </script>
     <meta name="description" content="We will bring a powerful and light programming language to its full potential as the foundation of a fast, fully functional and simple to use web development framework.
 Sailor will be completely free to use and open source."/>
     </head>

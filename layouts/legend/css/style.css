@@ -228,7 +228,7 @@ em {
 	border-color: #f0bf00;
 }
 .navbar-wrapper {
-	overflow:hidden;/* No fixed height, will break collapsible nav */
+	/*overflow:hidden; No fixed height, will break collapsible nav */
 }
 #menu-main {
 	margin-top: 1.125em;
@@ -261,7 +261,7 @@ ul#menu-main > li > a:hover {
 	background-size: cover;
 	;
 	min-height: 600px;
-	margin-top: -60px;
+	margin-top: -0px;
 	padding-top:160px;
 	text-align:center;
 }
