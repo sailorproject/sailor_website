@@ -41,7 +41,7 @@
         <ul style="margin-left: -20px">
           <li><a href="?r=docs" class="more-link">Overview</a>
             <ul>
-              <li><a href="?r=docs#dirtree" class="more-link">Controller</a></li>
+              <li><a href="?r=docs#dirtree" class="more-link">Directory Tree Info</a></li>
               <li><a href="?r=docs#linuxinstallation" class="more-link">Installation</a>
                 <ul>
                   <li><a href="?r=docs#linuxinstallation" class="more-link">Linux</ax></li>
