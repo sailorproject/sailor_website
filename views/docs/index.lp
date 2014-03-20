@@ -56,7 +56,9 @@
           <li><a href="?r=docs/tutorial" class="more-link">Tutorial</a>
             <ul>
                 <li><a href="?r=docs/tutorial#first" class="more-link">Your first application</ax></li>
-                <li><a href="?r=docs/tutorial#controller" class="more-link">Controller</a></li>
+                <li><a href="?r=docs/tutorial#controller" class="more-link">Controllers</a></li>
+                <li><a href="?r=docs/tutorial#views" class="more-link">Views</a></li>
+                <li><a href="?r=docs/tutorial#models" class="more-link">Models</a></li>
               </ul>
           </li>
           <li><a href="?r=docs/manual" class="more-link">Reference Manual</a></li>
@@ -111,16 +113,17 @@
     <h3>Dependencies</h3>
     <p>
       If you installed sailor through luarocks, there is no need to worry, all depencies will be installed with it. If you just cloned the repository or downloaded the zip, you should install these dependencies:</p>
-
+      <p>Lua File System is required.
+      <pre>luarocks install luafilesystem</pre></br>
       <p>
-      If you want to save your models in a database, you will need LuaSQL. I believe it should work with every db LuaSQL supports but so far I have only tested with MySQL. Install luarocks and get these rocks. LuaSQL-MySQL requires you to have mysql installed.</br>
+      If you want to save your models in a database, you will need LuaSQL. I believe it should work with every db LuaSQL supports but so far I have only tested with MySQL. LuaSQL-MySQL requires you to have mysql installed.</br>
 
       <pre>luarocks install LuaSQL-MySQL</pre></br>
-    <p>
-      If you want to use our mailer module, get these rocks with luarocks so we are able to send stuff via SMTP.</br>
+      <p>
+      If you want to use our mailer module, get these rocks so we are able to send stuff via SMTP.</br>
 
       <pre>luarocks install LuaSocket</br>luarocks install LuaSec</pre></br>
-      LuaSec requires openssl as a dependency, if you don't already have it please install these and try getting luasec again. If LuaSec can't find your openssl dir, try using these flags, depending on your system's architecture (Linux).</br>
+      LuaSec requires openssl as a dependency, if you don't have it already please install these and try getting luasec again. If LuaSec can't find your openssl dir, try using these flags, depending on your system's architecture (Linux).</br>
 
       <pre>luarocks install LuaSec OPENSSL_LIBDIR=/usr/lib/x86_64-linux-gnu</pre>
       or</br>

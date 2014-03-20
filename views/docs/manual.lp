@@ -56,7 +56,9 @@
           <li><a href="?r=docs/tutorial" class="more-link">Tutorial</a>
             <ul>
                 <li><a href="?r=docs/tutorial#first" class="more-link">Your first application</ax></li>
-                <li><a href="?r=docs/tutorial#controller" class="more-link">Controller</a></li>
+                <li><a href="?r=docs/tutorial#controller" class="more-link">Controllers</a></li>
+                <li><a href="?r=docs/tutorial#views" class="more-link">Views</a></li>
+                <li><a href="?r=docs/tutorial#models" class="more-link">Models</a></li>
               </ul>
           </li>
           <li><a href="?r=docs/manual" class="more-link">Reference Manual</a></li>
