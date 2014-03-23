@@ -96,10 +96,6 @@
       </p>
         <pre>a2enmod lua </pre>
       <p>
-        Open <code>/etc/apache2/mods-enabled/lua.load </code> and add this the end of file:
-      </p>
-        <pre>AddHandler lua-script .lua </pre>
-      <p>
         Restart Apache:
       </p>
         <pre>service apache2 restart</pre>
