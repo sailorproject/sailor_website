@@ -1,8 +1,21 @@
 local docs = {}
+md = require "controllers.ext.md"
 
 function docs.index(page)
 	page.layout = "legend/inside"
 	page:render('index',{show_brand=true})
+end
+function docs.install_win(page)
+	page.layout = "legend/inside"
+	page:render('install_win',{show_brand=true})
+end
+function docs.install_linux(page)
+	page.layout = "legend/inside"
+	page:render('install_linux',{show_brand=true})
+end
+function docs.install_mac(page)
+	page.layout = "legend/inside"
+	page:render('install_mac',{show_brand=true})
 end
 function docs.tutorial(page)
 	page.layout = "legend/inside"
