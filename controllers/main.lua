@@ -1,6 +1,6 @@
 local main = {}
 
-local mail = require "src.mail"
+local mail = require "sailor.mail"
 
 function main.index(page)
 	if page.POST['your-email'] ~= nil and page.POST['your-email'] ~= '' then

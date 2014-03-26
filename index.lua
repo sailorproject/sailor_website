@@ -1,3 +1,3 @@
 package.path = package.path .. ';./src/lib/?.lua;'
-require "src.sailor"
+require "sailor"
 sailor.launch()
