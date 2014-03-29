@@ -7,7 +7,7 @@
     <div class="doc">
       <a name="first" class="anchor">&nbsp;</a>
       <h3>Developing your first application</h3>
-      <p>After installing Sailor and generating your app, it's time to start developing! Sailor follows the MVC design pattern, so this basic tutorial will follow a typical but simplified workflow for this design. For details or advanced use of Sailor, please check the reference manual (coming soon).
+      <p>After installing Sailor and generating your app, it's time to start developing! Sailor follows the MVC design pattern, so this basic tutorial will follow a typical but simplified workflow for this design. For details or advanced use of Sailor, please check the reference manual.
 
       <a name="controller" class="anchor">&nbsp;</a>
       <h3>Controllers</h3>
@@ -28,7 +28,7 @@ end<br><br>return main --don't forget to return your controller at the end of th
 * Run Javascript on your browser &lt;script&gt; alert("hi");&lt;/script&gt;&lt;br/&gt;
 * Run Lua scripts from your server 
     &lt;?lua page:print(msg) 
-    --[[ If this came from the controller we just created, this will print 'Hello']] 
+    --[[ If this came from the controller we just created, this will print 'Hello']]
     ?&gt; &lt;br/&gt;
 * Run Lua scripts on your browser or both on the server and your browser:
     &lt;?lua@both another_msg = 'Heya' ?&gt;
@@ -41,9 +41,60 @@ end<br><br>return main --don't forget to return your controller at the end of th
 
     <a name="models" class="anchor">&nbsp;</a>
     <h3>Models</h3>
-    <p>So you want to create models and save your objects on a database
+    <p>So you want to create models and save your objects on a database! Let's do that! So far we only give support to MySQL but it could work with any other driver LuaSQL gives support to. Don't forget to edit your <code>config.lua</code> with your database details.</p>
+    <p>On our example we will create an user model. We don't have much auto generation - for now - so you must create your tables manually.</p>
+<pre>create table user(
+  id int primary key auto_increment, 
+  username varchar(20), 
+  password varchar(32)
+);</pre>
+   <p>After you're done, you must create a Lua file under <code>/models</code> folder. Ours, will be called <code>user.lua</code>. This is an example model, you must start requiring our model library which contains basic object orientated db functions like save() or find(). We will declare user as a table, its contents will be its attribute rules list, its attributes and public methods. At the end of the file we return, instead of user, <code>model:new(user)</code>, that means it's turning your table into a model object and incorporating the common methods to it.</p>
+<pre>
+local model = require "sailor.model"
+local user = {}
 
-      ... You'll do that soon! -- This manual is still under construction! Please be patient! =)
+user.attributes = { -- Attributes and their validation rules
+  --<attribute name> = { <validation func> = {<args>}, <validation func> = {<args>}...}
+  id = {},
+  username = { not_empty = {} },
+  password = { not_empty = {}, len = {6,10} }
+}
+
+user.db = {
+  key = 'id',
+  table = 'user'
+}
+
+function user.test() return "test" end -- A public method
+
+return model:new(user)
+</pre>
+    <p>It's important to notice that if you have an attribute named 'attributes', 'save', 'find' and so on, weird things might happen or you may lose access to them! You also can't create methods with the same name as your attributes, and if you create methods with the same name as upper model methods like 'validate', you'll overwrite them. Going back to a controller, a basic usage of our model example follows:
+<pre>
+local User = sailor.model("user") -- This will require your user module as a model
+
+local u = User:new() -- instantiating User as u
+local u2 = User:new() -- we can instantiate many other users
+
+u.username = 'joao' -- we can fill our attributes
+--[[ but we can't make up new ones, like u.yetanotherattribute = 42, they should be defined
+     on our attribute list at user.lua ]]
+
+local ok,err = u.validate() -- you can validate your models
+page:write(tostring(err)) -- 'password' must not be empty
+
+u.save() -- you can save or delete your from db
+u.delete()
+
+local some_user = User:find_by_id(1) -- or find existing rows
+local another_user = User:find_by_attributes{name = 'joao'}
+</pre>
+    <p>A lot of this will go through rewriting and improvement for more features on next version, so stay tuned. For more details on validation functions and existing db methods, please consult the reference manual.</p>
+
+    <p>This tutorial is under construction! Please be patient! =)</p>
   </div> 
   <!-- /.container -->
 </section>
+<div style="float: right; padding-right:10px; margin-bottom: -8px">
+  <small>Last updated 29-March-2014 12:15 GMT-3</small>
+</div>
