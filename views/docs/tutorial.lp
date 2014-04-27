@@ -41,7 +41,7 @@ end<br><br>return main --don't forget to return your controller at the end of th
 
     <a name="models" class="anchor">&nbsp;</a>
     <h3>Models</h3>
-    <p>So you want to create models and save your objects on a database! Let's do that! So far we only give support to MySQL but it could work with any other driver LuaSQL gives support to. Don't forget to edit your <code>config.lua</code> with your database details.</p>
+    <p>So you want to create models and save your objects on a database! Let's do that! So far we only give support to MySQL but it could work with any other driver LuaSQL gives support to. Don't forget to edit your <code>conf.lua</code> with your database details.</p>
     <p>On our example we will create an user model. We don't have much auto generation - for now - so you must create your tables manually.</p>
 <pre>create table user(
   id int primary key auto_increment, 
@@ -80,7 +80,7 @@ u.username = 'joao' -- we can fill our attributes
 --[[ but we can't make up new ones, like u.yetanotherattribute = 42, they should be defined
      on our attribute list at user.lua ]]
 
-local ok,err = u.validate() -- you can validate your models
+local ok,err = u:validate() -- you can validate your models
 page:write(tostring(err)) -- 'password' must not be empty
 
 u.save() -- you can save or delete your from db
@@ -96,5 +96,5 @@ local another_user = User:find_by_attributes{name = 'joao'}
   <!-- /.container -->
 </section>
 <div style="float: right; padding-right:10px; margin-bottom: -8px">
-  <small>Last updated 29-March-2014 12:15 GMT-3</small>
+  <small>Last updated 27-April-2014 04:10 GMT-3</small>
 </div>
