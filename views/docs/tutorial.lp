@@ -34,7 +34,6 @@ end<br><br>return main --don't forget to return your controller at the end of th
     &lt;?lua@both another_msg = 'Heya' ?&gt;
     &lt;?lua@server page:print(another_msg) ?&gt;
     &lt;?lua@client
-      require("js")
       js.window.alert(another_msg)
     ?&gt; &lt;br/&gt;
     </pre>
