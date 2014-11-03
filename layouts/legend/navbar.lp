@@ -21,6 +21,19 @@
             <li><a title="About" href="?r=main/about">About</a></li>
             <li><a title="Download" href="https://github.com/Etiene/sailor/releases">Download</a></li>
             <li><a title="Documentation" href="?r=docs">Documentation</a></li>
+			<li>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_donations">
+					<input type="hidden" name="business" value="lua.sailorproject@gmail.com">
+					<input type="hidden" name="lc" value="US">
+					<input type="hidden" name="item_name" value="Sailor Web Framework Donation">
+					<input type="hidden" name="no_note" value="0">
+					<input type="hidden" name="currency_code" value="EUR">
+					<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest">
+					<input type="submit" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Donate to Project"
+						style="border:0px; background-color:#0b333f; margin: 0px; font-family: 'Patua One', cursive; font-weight: normal; 
+						font-size: 1em; color: #fff; margin-top: 2px;">					
+				</form>
           </ul>
         </nav>
       </div>
