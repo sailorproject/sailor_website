@@ -17,4 +17,8 @@ function main.about(page)
 	page:render("about",{show_brand=true})
 end
 
+function main.donate(page)
+	page.layout = "legend/inside"
+	page:render("donate",{show_brand=true})
+end
 return main

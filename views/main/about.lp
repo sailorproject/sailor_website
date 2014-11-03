@@ -1,6 +1,6 @@
 <section id="about" class="single-page scrollblock">
   <div class="container">
-    <h2>About Sailor</h3>
+    <h2>About Sailor</h2>
 	<p>I’m a student at PUC-Rio, home of Lua programming language. For some reason, Lua has more recognition abroad, being used in very known softwares such as World of Warcraft, Angry Birds and MediaWiki, and is not a popular thing here. How is it possible that in the the very same university where researchers designed a programming language people don’t try to use it whenever possible? Maybe I’m being stubborn, but I firmly believe we should pay more attention to home-grown stuff, specially when it’s well designed open source. Everyone benefits from widening the use of Lua. If it’s used more often, improvements will be encouraged, the community will grow, it will be easier to find examples and support, PUC-Rio will have more recognition, its researchers will have more recognition, its students will have more recognition. And that includes me.</p>
 
 	<p>Looking from another angle, here I am, at Lua’s nest. I studied Programming Language Semantics with Roberto Ierusalimschy himself, Formal Languages with Hisham Muhammad and Basic Software with Ana Lúcia de Moura. Let’s say I’m in the right place, in the right time and can get in contact with the right people so easily. It’s an opportunity to see what’s going on on first hand and I’d be so foolish if I didn’t learn something about it before I graduate or leave Rio de Janeiro.</p>
