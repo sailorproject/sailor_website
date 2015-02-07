@@ -49,19 +49,23 @@ end<br><br>return main --don't forget to return your controller at the end of th
 );</pre>
    <p>After you're done, you must create a Lua file under <code>/models</code> folder. Ours, will be called <code>user.lua</code>. This is an example model, you must start requiring our model library which contains basic object orientated db functions like save() or find(). We will declare user as a table, its contents will be its attribute rules list, its attributes and public methods. At the end of the file we return, instead of user, <code>model:new(user)</code>, that means it's turning your table into a model object and incorporating the common methods to it.</p>
 <pre>
-local model = require "sailor.model"
+local val = require "valua"
 local user = {}
-
-user.attributes = { -- Attributes and their validation rules
-  --<attribute name> = { <validation func> = {<args>}, <validation func> = {<args>}...}
-  id = {},
-  username = { not_empty = {} },
-  password = { not_empty = {}, len = {6,10} }
+-- Attributes and their validation rules
+user.attributes = { 
+  -- { <attribute> = <validation function, valua required> or "safe" if no validation required for this attribute} 
+  { id = "safe" },
+  { username = val:new().not_empty() },
+  { password = val:new().not_empty().len(6.10) }
 }
 
 user.db = {
   key = 'id',
   table = 'user'
+}
+
+user.relations = {
+  posts = {relation = "HAS_MANY", model = "post", attribute = "author_id"},
 }
 
 function user.test() return "test" end -- A public method
@@ -95,5 +99,5 @@ local another_user = User:find_by_attributes{name = 'joao'}
   <!-- /.container -->
 </section>
 <div style="float: right; padding-right:10px; margin-bottom: -8px">
-  <small>Last updated 27-April-2014 04:10 GMT-3</small>
+  <small>Last updated 7-February-2015 11:16 GMT+1</small>
 </div>
