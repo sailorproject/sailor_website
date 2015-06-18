@@ -1,8 +1,8 @@
-<? page:include("views/docs/_style") ?>
+<? page:include("/views/docs/_style") ?>
 <section id="services" class="single-page scrollblock">
   <div class="container" style:"margin-top: -20px">
     <a name="overview" class="anchor">&nbsp;</a>
-    <? page:include("views/docs/_menu") ?>
+    <? page:include("/views/docs/_menu") ?>
     <h2>Tutorial</h2>
     <div class="doc">
       <a name="first" class="anchor">&nbsp;</a>
@@ -14,6 +14,3 @@
   </div> 
   <!-- /.container -->
 </section>
-<div style="float: right; padding-right:10px; margin-bottom: -8px">
-  <small>Last updated 7-February-2015 11:16 GMT+1</small>
-</div>

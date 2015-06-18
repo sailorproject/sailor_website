@@ -1,3 +1,5 @@
+##Configuring your Sailor Application
+
 You will find Sailor's config file under `conf/conf.lua`. This file contains a table with config strings for core Sailor control, database server configuration and SMTP server configuration for mailer module.
 
 `sailor.app_name` is used as a default title tag for your pages and can be invoked at any time from the rest of your app accessing the conf table.

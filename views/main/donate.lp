@@ -4,9 +4,8 @@
 		<h2>Ways your donation could be used</h2>
 		<br/>
 		Time investment into Sailor
-		<br/>Travel expenses to free software related conferences
-		<br/>Paying a designer to make Sailor a logo if nobody volunteers
-		<br/>Beer / Coffee
+		<br/>Travel expenses to free software related conferences and other tech events
+		<br/>Coffee
 		<br/>
 		<br/>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

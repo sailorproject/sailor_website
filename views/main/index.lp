@@ -12,7 +12,7 @@
         padding:0.5em;
         letter-spacing: 0.05em;
         text-decoration: none;
-	margin: 0;
+	      margin: 0;
         border: 0;
         text-transform: none;
         background: #f0bf00 !important;
@@ -29,15 +29,13 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-        <? if page.POST['your-email'] ~= nil then ?>
-            <h2>Thank you! We will notify you as soon as Sailor has a new release!</h2>
-        <? else ?>
-            <h2>Signup to our mail list to be updated on our releases</h2>
-        <? end ?>
-<br/>
-<div class="notify">
-      <a href="https://groups.google.com/forum/#!forum/sailor-l" >Notify me</a>
-</div>        </div>
+          <h2>Signup to our mail list to be updated on our releases<br/> or if you need support</h2>
+
+          <br/>
+          <div class="notify">
+                <a href="https://groups.google.com/forum/#!forum/sailor-l" >Google Group / Mail List</a>
+          </div>       
+       </div>
       </div>
     </div>
   </header>
@@ -49,8 +47,7 @@
       <div class="row"> 
        <div class="span12">
           <article>
-            <p>We bring a <a href="http://lua.org" target="_blank">powerful and light programming language</a> to its full potential as the foundation of a fast and simple to use <a href="https://github.com/Etiene/sailor" target ="_blank">web development framework</a>.</p>
-              <p>Sailor is completely free to use and open source.</p>
+            <p>We bring a <a href="http://lua.org" target="_blank">powerful and light programming language</a> to its full potential as the foundation of a fast and simple to use <a href="https://github.com/Etiene/sailor" target ="_blank">web development framework</a>. Sailor is completely free to use and open source.</p>
           </article>
         </div>
         <!-- ./span12 -->

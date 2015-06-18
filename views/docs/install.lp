@@ -1,7 +1,7 @@
-<? page:include("views/docs/_style") ?>
+<? page:include("/views/docs/_style") ?>
 <section id="services" class="single-page scrollblock">
   <div class="container" style:"margin-top: -20px">
-    <? page:include("views/docs/_menu") ?>
+    <? page:include("/views/docs/_menu") ?>
     <h2>Installation</h2>
     <div class="doc">
       

@@ -1,7 +1,7 @@
 <div class="footer-wrapper">
   <div class="container">
     <footer>
-      <small>&copy; 2014-2015 Etiene Dalcol. Powered by Sailor 0.2</small>
+      <small>&copy; 2014-2015 Etiene Dalcol. Powered by Sailor 0.3</small>
     </footer>
   </div>
   <!-- ./container -->
