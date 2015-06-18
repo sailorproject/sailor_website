@@ -1,15 +1,15 @@
 <div class="footer-wrapper">
   <div class="container">
     <footer>
-      <small>&copy; 2014 Etiene Dalcol. Powered by Sailor 0.2</small>
+      <small>&copy; 2014-2015 Etiene Dalcol. Powered by Sailor 0.2</small>
     </footer>
   </div>
   <!-- ./container -->
 </div>
 <!-- Loading the javaScript at the end of the page -->
-<script type="text/javascript" src="layouts/legend/js/bootstrap.js"></script>
-<script type="text/javascript" src="layouts/legend/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="layouts/legend/js/site.js"></script>
+<script type="text/javascript" src="themes/legend/js/bootstrap.js"></script>
+<script type="text/javascript" src="themes/legend/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="themes/legend/js/site.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

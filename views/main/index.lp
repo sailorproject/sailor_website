@@ -49,8 +49,8 @@
       <div class="row"> 
        <div class="span12">
           <article>
-            <p>We bring a <a href="http://lua.org" target="_blank">powerful and light programming language</a> to its full potential as the foundation of a fast, fully functional and simple to use <a href="https://github.com/Etiene/sailor" target ="_blank">web development framework</a>.</p>
-              <p>Sailor will be completely free to use and open source.</p>
+            <p>We bring a <a href="http://lua.org" target="_blank">powerful and light programming language</a> to its full potential as the foundation of a fast and simple to use <a href="https://github.com/Etiene/sailor" target ="_blank">web development framework</a>.</p>
+              <p>Sailor is completely free to use and open source.</p>
           </article>
         </div>
         <!-- ./span12 -->
