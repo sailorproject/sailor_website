@@ -26,7 +26,7 @@ Download Apache 2.4 according to your Windows version:
 
 Windows 7, 8/8.1, Vista, Server 2008, Server 2012 - <http://www.apachelounge.com/download/>
 
-Windows XP - <http://www.apachelounge.com/download/win32/> 
+Windows XP - <http://www.apachelounge.com/download/win32/>
 
 Unzip the package (eg: httpd-2.4.9-win32.zip) to C:\Apache24\
 
@@ -37,17 +37,22 @@ Copy the files in the `src/sailor/demo-app` directory of this repository to C:/A
 Edit `\conf\httpd.conf` and uncomment the following line to enable mod_lua:
 
     LoadModule lua_module modules/mod_lua.so
-    
+
 Change the DirectoryIndex directive to:
 
     DirectoryIndex index.lua index.html
-    
-Add the AddHandler directive:
+
+Add the SetHandler directive:
 
     <FilesMatch "\.lua$">
-    AddHandler lua-script .lua
+      SetHandler lua-script
     </FilesMatch>
-    
+
+Optionally, tweak mod_lua for high performance:
+
+    LuaScope thread
+    LuaCodeCache stat
+
 Add the LuaPackage* directives:
 
     <IfModule lua_module>
@@ -57,7 +62,7 @@ Add the LuaPackage* directives:
      LuaPackagePath "C:/Apache24/htdocs/sailor/?.lua"
      LuaPackagePath "C:/Apache24/htdocs/sailor/?/init.lua"
     </IfModule>
-    
+
 ####Alternative Installation with mod_plua
 
 Download mod_plua from <http://sourceforge.net/projects/modplua/files/>
@@ -69,20 +74,20 @@ Install and configure it as explained at <http://sourceforge.net/p/modplua/wiki/
 TODO
 
 ####Done!
-    
+
 Run bin\httpd.exe in the Apache24 directory.
 
 Now go to <http://localhost/sailor/?r=main> in your browser. You should see the default Sailor page.
 
 ###Installation for Nginx
 
-Download Nginx 1.5.12.1 from:
+Download the latest Nginx version from:
 
 <http://nginx-win.ecsds.eu/>
 
 If you've not done it yet, you may need to install the Visual C++ Redistributable Setup:
 
-<http://nginx-win.ecsds.eu/vcredist_x86.exe>
+<http://nginx-win.ecsds.eu/download/vcredist_x86.exe>
 
 Unzip the nginx ZIP to a directory of your choice.
 
@@ -108,7 +113,37 @@ You must also add to the server block:
         index  index.lua index.lp;
     }
     location ~* ^.+\.(?:css|eot|js|json|png|svg|ttf|woff)$ { }
+
+####Done!
+
+Now run nginx.exe and go to <http://localhost/sailor/index.lua?r=main> in your browser.
+
+###Installation for Lighttpd
+
+Download the latest Lighttpd from:
+
+<http://code.google.com/p/wlmp-project/>
+
+Unzip the Lighttpd ZIP to a directory of your choice.
+
+Copy the files in the `src/sailor/demo-app` directory of this repository to the htdocs/sailor directory of the Lighttpd dir.
+
+####Configuring Lighttpd
+
+Open the `conf\lighttpd.conf` file, uncomment mod_magnet in server.modules, and add the following lines right after index-file.names:
+
+    $HTTP["url"] =~ "^/sailor/index.lua" {                    
+        magnet.attract-physical-path-to = ( server_root + "/htdocs/sailor/index-magnet.lua")
+    }
+    $HTTP["url"] =~ "^/sailor/(conf|controllers|models|runtime|views)/" {                
+        url.access-deny = ("")
+        dir-listing.activate = "disable" 
+    }
+    $HTTP["url"] =~ "^/sailor/themes/" {                
+        url.access-deny = (".lp")
+        dir-listing.activate = "disable" 
+    }
     
 ####Done!
-    
-Now run nginx.exe and go to <http://localhost/sailor/index.lua?r=main> in your browser.
+
+Now run LightTPD.exe and go to <http://localhost/sailor/index.lua?r=main> in your browser.

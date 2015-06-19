@@ -61,6 +61,10 @@ function docs.install_mac(page)
 	render_doc_md(page,'INSTALL_MAC')
 end
 
+function docs.install_linux_arch(page)
+	render_doc_md(page,'INSTALL_LINUX_ARCH')
+end
+
 function docs.tutorial(page)
 	page.layout = "inside/index"
 	version = page.GET.v or version

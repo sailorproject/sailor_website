@@ -6,6 +6,7 @@
               <li><a href="?r=docs/install" class="more-link">Installation</a>
                 <ul>
                   <li><a href="?r=docs/install_linux" class="more-link">Linux Install</a></li>
+                  <li><a href="?r=docs/install_linux_arch" class="more-link">Arch Linux Install</a></li>
                   <li><a href="?r=docs/install_win" class="more-link">Windows Install</a></li>
                   <li><a href="?r=docs/install_mac" class="more-link">Mac Install</a></li>
                 </ul>
