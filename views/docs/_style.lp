@@ -30,3 +30,13 @@
     }
   }
 </style>
+
+<link rel="stylesheet" href="/pub/thirdparty/highlight/styles/monokai-sublime.css">
+<script src="/pub/thirdparty/highlight/highlight.pack.js"></script>
+
+<script>
+hljs.configure({
+  languages: ['lua','javascript']
+});
+hljs.initHighlightingOnLoad();</script>
+

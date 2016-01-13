@@ -5,7 +5,9 @@
 		<br/>
 		Time investment into Sailor
 		<br/>Travel expenses to free software related conferences and other tech events
-		<br/>Coffee
+		<br/>This website's hosting and domain (5$/mo + ~10$/year)
+		<br/>Lua and Sailor stickers to be distributed on conferences
+		<br/>A tip or coffee for the developer(s) :)
 		<br/>
 		<br/>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -20,15 +22,21 @@
 				style="border:0px; background-color:#f0f0f0; margin: 0px; color: #F1505A; margin-top: 2px; width: 250px">					
 		</form>
 
-		<a href="https://gratipay.com/Etiene/" target="_blank">Donate small amounts weekly via Gratipay</a>
+		<a href="https://gratipay.com/Etiene/" target="_blank">Donate small amounts (0.10-2$) weekly via Gratipay</a>
 		<br/>
 		<br/>
 		Donate single amount using Bitcoins: 
 		<br/> 1ELMM1HMGqoVw54phTKufVDvWuNzHFwQ5n
 		<br/>
 		<br/>
+		<a href="https://www.bountysource.com/teams/sailor" target="_blank">Pay people to resolve specific issues or implement features on Sailor on BountySource</a>
 		<br/>
-		<strong>THANK YOU!</strong>
+		<br/>
+		<br/>
+		<strong>THANK YOU! <3 </strong>
+		<br/>
+		<br/>
+		If you wish, a name and an URL can be listed <a href="https://github.com/Etiene/sailor/blob/master/THANKYOU.md" target="_blank">here</a> (valid for donations of any amount). <br/>Just email lua.sailorproject@gmail.com about it :)
 	</center>
   </div>
   <!-- /.container -->

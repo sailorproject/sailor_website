@@ -2,7 +2,7 @@
 <section id="services" class="single-page scrollblock">
   <div class="container" style:"margin-top: -20px">
     <a name="overview" class="anchor">&nbsp;</a>
-    <? page:include("views/docs/_menu") ?>
+    <? page:include("views/docs/_menu",{version=version}) ?>
     <h2>Reference Manual</h2>
     <div class="doc">
       <h3>The Autogen module</h3>

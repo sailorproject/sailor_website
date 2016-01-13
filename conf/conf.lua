@@ -5,8 +5,10 @@ local conf = {
 							  -- Example: 'maintenance' will render /views/maintenance.lp
 		default_controller = 'main', 
 		default_action = 'index',
-		layout = 'legend',
-		route_parameter = 'r'
+		theme = 'legend',
+		layout = 'index',
+		route_parameter = 'r',
+		friendly_urls = true 
 	},
 	db = {
 		driver = 'mysql',
@@ -16,10 +18,13 @@ local conf = {
 		dbname = ''
 	},
 	smtp = {
-		server = '',
-		user = '',
-		pass = '',
-		from = ''
+		server = 'smtp.gmail.com',
+		user = 'lua.sailorproject@gmail.com',
+		pass = 	'',
+		from = '<lua.sailorproject@gmail.com>'
+	},
+	debug = {
+		inspect = false
 	}
 }
 

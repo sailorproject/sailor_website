@@ -20,12 +20,17 @@
         -moz-border-radius: 3px;
         -webkit-border-radius: 3px;
 }
+#headerwrap h1{
+  margin-top:-25px;
+  font-size: 32pt;
+}
 
 </style>
 <div id="headerwrap">
 
   <header class="clearfix">
-    <h1><span>Sailor!</span> A Lua MVC framework.</h1>
+    <h1><img src="/pub/images/sailorlogo2.png" style="height: 200px; margin-bottom:5px"/><br/>
+    A Lua MVC web framework.</h1>
     <div class="container">
       <div class="row">
         <div class="span12">
