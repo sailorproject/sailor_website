@@ -32,11 +32,17 @@
 		<a href="https://www.bountysource.com/teams/sailor" target="_blank">Pay people to resolve specific issues or implement features on Sailor on BountySource</a>
 		<br/>
 		<br/>
-		<br/>
 		<strong>THANK YOU! <3 </strong>
 		<br/>
 		<br/>
 		If you wish, a name and an URL can be listed <a href="https://github.com/Etiene/sailor/blob/master/THANKYOU.md" target="_blank">here</a> (valid for donations of any amount). <br/>Just email lua.sailorproject@gmail.com about it :)
+		<br/>
+		<br/>
+		<h2>Sponsoring opportunities</h2>
+		<br/>
+		<br/>If you are a company interested in supporting the development of Lua web developments tools more extensively, you can email lua.sailorproject@gmail.com so we can have a conversation about it. We will also happily display your company's logo on our web page. 
+
+
 	</center>
   </div>
   <!-- /.container -->

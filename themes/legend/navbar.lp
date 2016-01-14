@@ -23,7 +23,7 @@
             <li><a title="Download" href="https://github.com/Etiene/sailor/releases">Download</a></li>
             <li><a title="Extensions" href="<%=page:make_url('exts')%>">Extensions</a></li>
             <li><a title="Documentation" href="<%=page:make_url('docs')%>">Documentation</a></li>
-			<li><a title="About" href="<%=page:make_url('main/donate')%>">Donate to Project</a></li>
+			<li><a title="About" href="<%=page:make_url('main/donate')%>">Donate / Sponsor</a></li>
         </nav>
       </div>
       <!-- /.container -->
