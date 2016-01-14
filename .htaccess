@@ -9,7 +9,8 @@ RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
 
+RewriteRule ^([^/]+)/([^/]+)/([^.]*)/?$ index.lua?r=$1/$2&q=$3 [L]
+
 RewriteRule ^([^.]+)\/?$ index.lua?r=$1 [L]
 
-#RewriteRule ^([^/]+)/([^/]+)/([^./]*)/?$ index.lua?r=$1/$2&q=$3 [L]
 #RewriteRule ^([^/]+)/([^./]+)/?$ index.lua?r=$1/$2 [L]

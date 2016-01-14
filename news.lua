@@ -1,6 +1,6 @@
 return {
 	{ 
-		title = 'new-release-0.5-pluto-contributor-call',
+		title = 'new-release-0-5-pluto-contributor-call',
 		long_title = 'Dec 02 2015 - New release! Version 0.5 (Pluto) and Call For Contributors!',
 		body = [[
 		Hello, everyone!
@@ -84,7 +84,7 @@ lua start-server.lua
 		]]
 	},
 	{
-		title = 'new-release-version-0.4-chibi',
+		title = 'new-release-version-0-4-chibi',
 		long_title = 'Jul 6 2015 - New release! Version 0.4 (Chibi)',
 		body = [[
 			I am proud to announce a new release came out today: <a href="https://github.com/Etiene/sailor/releases" target="_blank">Version 0.4 (Chibi)</a>
