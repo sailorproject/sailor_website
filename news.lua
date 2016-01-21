@@ -1,4 +1,33 @@
 return {
+	{	title='ann-the-future-of-sailor-a-letter-to-sailor-and-lua-communities',
+		long_title='Jan 15 2016 - Announcement: The future of Sailor, a letter to Sailor and Lua communities',
+		md = true,
+		body=[[
+Hello everyone,
+
+Happy new year!
+
+As you may or may not know, it is my dream that Lua gains more scene on web developments, being it through Sailor or not. When I decided to create Sailor, I was still learning Lua and I was not thinking big, I created another tool only because there weren’t many around and it would take me long to understand the current tools to contribute to them (and I also believe that at the time lapis was moonscript only). While nobody would be interested in yet another MVC framework for PHP, I knew this wouldn’t be the case with Lua, it wouldn’t be very redundant and I would have fun creating something to learn. 
+
+Two years have passed and this has been amazing! While developments have been slow (I cannot do as much as I’d wish on my free time while being a full time masters student), I can confidently say I never imagined Sailor would become what it is today and I never imagined my life would change so much because of it. It became way more solid during this time and it’s in fact usable for real world applications, having gained its first [productions uses](https://github.com/sailorproject/production_uses) on this last year. I would also not be able to continue my masters if it wasn’t for its participation on last [Google Summer of Code](http://google-opensource.blogspot.com.br/2015/12/google-summer-of-code-wrap-up-lablua.html). And it’s been an honor to present it in conferences such as [FISL](http://hemingway.softwarelivre.org/fisl15/high/41a/sala41a-high-201405081604.ogv), [Lua Workshop](https://www.youtube.com/watch?v=igkEr8dw9Lk), [.concat()](https://www.youtube.com/watch?feature=player_detailpage&v=bx1bVJZueFw#t=371), [code.talks](http://www.codetalks.de/2015/programm/web-development-with-lua-programming-language) and [Coding Serbia](https://www.youtube.com/watch?v=JGPvM-50bOk).
+
+During this time, I also got more involved with the Lua community in ways I couldn’t imagine. I ended opening [lua.space](http://lua.space), I help manage the international [Lua facebook group](https://www.facebook.com/groups/lua.br/), in three weeks I’ll be at FOSDEM discussing the Lua community on a [panel](https://fosdem.org/2016/schedule/event/future_guile_lua/) with other wonderful people and, from mid february on, I’ll spend a whole month working full time improving [LuaRock](http://luarocks.org)’s website as a part of a school project. 
+
+I only have great things to say and I’d like to give an immense thank you to the Lua community for the support it has been giving me on the development of Sailor since the [beginning](https://www.reddit.com/r/lua/comments/1uvssq/i_decided_to_learn_lua_by_writing_a_web_framework/cem79gd), even though it has always been a very simple tool. I’ve learned so much, I’ve grew so much. Special thanks go to: Hisham Muhammad, Ana Lúcia de Moura, Roberto Ierusalimschy, Pierre Chapuis, Paul Cuthbertson, Fabio Mascarenhas, Felipe Daragon, Daniel Gruno, Alexander Gladysh and Ignacio Burgueño. I apologise if I accidently forgot someone.
+
+Sailor grew as well. And I have great news for you, marking the beginning of a new phase!
+
+It is our great desire that one day Sailor becomes a professional tool and has adhesion not only in the Lua community but outside. We believe Lua is an amazing differential on itself. We’re trying to organize things better to enable an environment where this is possible. I have written [contribution guides](https://github.com/sailorproject/sailor/blob/master/CONTRIBUTING.md), added a [code of conduct](https://github.com/sailorproject/sailor/blob/master/CODE_OF_CONDUCT.md) and have moved Sailor’s repository from my personal profile to it’s own [organisation profile](https://github.com/sailorproject/) on Github. It is time now, to discuss the future of Sailor with you and prepare for a v1.0 release. Hopefully, many interesting discussions will spring during FOSDEM as well, this is why I created a [repository](https://github.com/sailorproject/design) only for brainstorming and documenting its design. 
+Perhaps we could separate some of the ideas and I’ll apply them to [Rails Girls Summer of Code](http://railsgirlssummerofcode.org/guide/projects/). If accepted, that means fresh blood helping around, new features, and women being mentored into programming. 
+
+Additionally, in the biggest announcement of this letter, I’d like to welcome [Fernando Paredes García](https://twitter.com/develCuy) on our team. Fernando @develCuy is a Lua developer from Lima, Perú, who’s a FOSS advocate and also a member of the Drupal community. He’s the maintainer of [The Ophal Project](http://ophal.org), a highly-scalable CMS and web platform in Lua which is already being used to run some high traffic websites. We have been discussing and decided that Sailor and Ophal will be joining forces. This means that in the near feature we will be working together to decide what is the best course for this, gradually make our modules interoperate, resolve license issues, have a single and stronger project and work together on future modifications. This merge procedure will also be discussed in the [design repository](https://github.com/sailorproject/design). I am very happy because Fernando and I share many values, we believe in the power of Lua and 4 hands work better than 2. Please welcome Fernando \*slow claps\*. 
+
+
+Cheers,
+
+Etiene]]
+
+	},
 	{ 
 		title = 'new-release-0-5-pluto-contributor-call',
 		long_title = 'Dec 02 2015 - New release! Version 0.5 (Pluto) and Call For Contributors!',

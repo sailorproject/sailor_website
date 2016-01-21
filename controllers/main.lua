@@ -20,6 +20,7 @@ function main.about(page)
 end
 
 function main.news(page)
+	local markdown = require "markdown"
 	page.theme = "legend/inside"
 	local news = require "news"
 	local text = ''
@@ -28,6 +29,9 @@ function main.news(page)
 		for _,v in pairs(news) do
 			if v.title == page.GET.t then
 				page.title = 'Sailor! '.. v.long_title
+				if v.md == true then
+					v.body = markdown(v.body)
+				end
 				text = "<h4><a href='"..page:make_url('main/news',{t=v.title}).."'>"..v.long_title .. "</a></h4><br/>" .. v.body
 			end
 		end
