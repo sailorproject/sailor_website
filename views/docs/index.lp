@@ -7,7 +7,7 @@
     <div class="doc">
       <a name="dirtree" class="anchor">&nbsp;</a>
       <h3/>Features on version 0.5 (Pluto)</h3>
-      <br/>Compatible with Lua 5.1, Lua 5.2 and LuaJIT
+      <br/>Compatible with Lua 5.1, Lua 5.2 and LuaJIT (Compatibility may depend on web server used. 5.3 compatibility not verified yet)
       <br/>Luarocks setup
       <br/>Runs over Apache2, NginX, Mongoose, Lighttpd, Xavante and Lwan web servers
       <br/>Using Windows, Mac or Linux systems

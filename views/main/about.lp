@@ -65,7 +65,7 @@ Yes. You can find a review of multiple tools <a href="http://lua.space/webdev/th
 Sailor's code license is MIT. In summary, that means you can use it for whatever you want, on both open source and proprietary projects. You can even fork it, rename it to Potato and sell it, as long as you don't blame us if something explodes or pretend you were the one who wrote everything. Meaning that, the only things you cannot do are removing the license files or holding Sailor's team or its contributors accountable for any problems that might happen when using Sailor.
 
 <h3>How do I use Sailor?</h3>
-You can find a manual and a tutorial <a href="http://sailorproject.org/docs">here</a>. If you will have doubts, you can ask them at our <a href="https://groups.google.com/forum/#!forum/sailor-l" target="_blank">google group / email list</a>.
+You can find a manual and a tutorial <a href="http://sailorproject.org/docs">here</a>. If you still have doubts, you can ask them at our <a href="https://groups.google.com/forum/#!forum/sailor-l" target="_blank">google group / email list</a>.
 
 <h3>May I contribute to Sailor?</h3>
 Yes, you will find a detailed guide on multiple ways to contribute <a href="https://github.com/sailorproject/sailor/blob/master/CONTRIBUTING.md" target="_blank">here</a>.

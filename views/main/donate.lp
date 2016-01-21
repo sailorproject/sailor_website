@@ -5,6 +5,7 @@
 		<br/>
 		Time investment into Sailor
 		<br/>Travel expenses to free software related conferences and other tech events
+		<br/>Time investment into advocating for the Lua programming language
 		<br/>This website's hosting and domain (5$/mo + ~10$/year)
 		<br/>Lua and Sailor stickers to be distributed on conferences
 		<br/>A tip or coffee for the developer(s) :)
