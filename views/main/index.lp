@@ -46,6 +46,10 @@
     </div>
   </header>
 </div>
+
+
+
+
 <!--******************** Feature ********************-->
 <div class="scrollblock">
   <section id="feature">
@@ -63,3 +67,34 @@
     <!-- ./container -->
   </section>
 </div>
+
+
+
+<section id="portfolio" class="single-page scrollback">
+  <div class="container">
+    <div class="row">
+      <div class="span4"></div>
+      <div class="span4">
+        <h1>Quick Start</h1>
+        
+          <pre>
+            <code class="hljs">
+$luarocks install sailor
+$sailor create "my app"
+$cd my_app/
+$lua start-server.lua
+            </code>
+          </pre>
+        
+      </div>
+      <div class="span4"></div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="/pub/thirdparty/highlight/styles/monokai-sublime.css">
+<script src="/pub/thirdparty/highlight/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
