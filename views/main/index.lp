@@ -37,9 +37,10 @@
           <h2>Signup to our mail list to be updated on our releases<br/> or if you need support</h2>
 
           <br/>
-          <div class="notify">
-                <a href="https://groups.google.com/forum/#!forum/sailor-l" >Google Group / Mail List</a>
-          </div>       
+          <form action="http://groups.google.com/group/sailor-l/boxsubscribe">
+            <input type="text" name="email" placeholder="your@email.com">
+            <input type="submit" class="notify" name="sub" value="Notify me">
+          </form>
        </div>
       </div>
     </div>

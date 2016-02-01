@@ -2,7 +2,7 @@
 <section id="about" class="single-page scrollblock">
   <div class="container">
   	<h2>Features</h2>
-	<p>Sailor is an MVC web framework completely written in Lua. Some advantages of Sailor in comparison with similar tools is the fact that it runs on many different environmentsm being compatible with multiple web servers such as Apache, Nginx and Xavante, databases and operational systems. A distinguishable feature is the fact that Sailor allows the developer to write the whole app in Lua if they want, the backend and also the frontend, using a Lua-to-Javascript virtual machine. </p>
+	<p>Sailor is a web framework in the Lua programming language.  Like Lua, it is open sourced under the MIT License, which is extremely permissive. Sailor applications are structured in a model-view-controller (MVC) architecture. Like other web development frameworks, such as Ruby on Rails and Django, it is designed to make the development process faster by making some assumptions and conventions (over configuration) and encouraging principles like DRY (Don't Repeat Yourself). One of major advantages of Sailor resides in Lua itself, an extremely friendly language with a blazing fast performance. A distinguishable feature is the fact that Sailor allows the developer to write the whole app in Lua if they want, the backend and also the frontend, using a Lua-to-Javascript virtual machine. </p>
 	<p>For a complete list of features, please refer to the <a href='<%= page:make_url("docs") %>'>documentation</a>.
 
 
