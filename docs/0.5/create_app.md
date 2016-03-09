@@ -12,11 +12,11 @@ The directory is optional, if not set, it will create your app in the same direc
     sailor create 'Hey arnold' /var/www
  
 
-This will create the directory /var/www/hey_arnold with the base of your app. I'll tell more about this later.
+This will create the directory `/var/www/hey_arnold` with the base of your app. I'll tell more about this later.
 
 
 ####Sailor by direct download / git clone in Unix system
-Sailor comes bundled with lua a file called sailor_create. To create your app, on terminal, you cd to where Sailor is and execute sailor_create using the app name and the installation dir as parameters. Example: 
+Sailor comes bundled with lua a file called `sailor_create`. To create your app, on terminal, you cd to where Sailor is and execute `sailor_create` using the app name and the installation dir as parameters. Example: 
 
 
 
@@ -60,7 +60,7 @@ Sailor values convention over configuration to make our tasks easier. That's why
 
 `index.lua` - This is the file that will run your app. You don't need to touch this either (unless you want to).
 
-`index-magnet.lua` - This is the file that will run your app in case you are using Lighttpd mod_magnet.
+`index-magnet.lua` - This is the file that will run your app in case you are using Lighttpd `mod_magnet`.
 
 
 `start-server.lua` - This file will be used for those who want to run Sailor using Xavante server. If that's the case you only need to install Xavante using luarocks and execute this file to put your app up.
