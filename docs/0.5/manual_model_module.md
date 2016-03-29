@@ -1,7 +1,7 @@
 ##Reference Manual
 
 ###The Model Module
-Attention not to mistake ' . ' with ' : ' in Lua. ' : ' is a syntatic sugar when using Object-Orientated Programming, it means that the object itself will be sent as an argument to the function before the other arguments. Example: model.find_by_id( model, id ) = model:find_by_id( id ). To use these functions you will need first to generate the model through the built-in function sailor.model( ).
+Attention not to mistake ' . ' with ' : ' in Lua. ' : ' is a syntatic sugar when using Object-Orientated Programming, it means that the object itself will be sent as an argument to the function before the other arguments. Example: model.find\_by\_id( model, id ) = model:find\_by\_id( id ). To use these functions you will need first to generate the model through the built-in function sailor.model( ).
 
 ####model:count( )
 Returns the amount of objects of a desired model stored in the database. Returns a number.
@@ -39,7 +39,7 @@ Example:
 ####model:find_all( )
 (NOT ESCAPED, DO NOT USE THIS FUNCTION UNLESS YOU WRITE THE WHERE_STRING YOURSELF) Finds all objects based on the given part of the SQL query after the WHERE. Returns a table with the objects found or an empty table.
 
- * where_string: string that will go after 'WHERE' on your query.
+ * where\_string: string that will go after 'WHERE' on your query.
 
 Example: 
 
@@ -48,7 +48,7 @@ Example:
     -- This will find all users with age greater or equal than 42, ordered by descending order.
     local u = User:find_all( "age >= 42 ORDER BY age DESC" )
 
-####model:find_by_attributes( attributes )
+####model:find\_by\_attributes( attributes )
 (The values inside the table will be escaped) Finds one object with the given attributes. Returns the object found or nil.
 * attributes: table. Contains the attributes and the values to be used in the query.
 
@@ -59,7 +59,7 @@ Example:
     -- This will find one user with the attribute name equal to Carolina and age equal to 42.
     local u = User:find_by_attributes( { name = 'Carolina', age = 42 } )
 
-####model:find_by_id( id )
+####model:find\_by\_id( id )
 (The alue passed will be escaped) Finds one object with the given id. Returns the object found or nil.
 
  * id: string or number. The id that will be compared to whatever attribute name that is set on your model as db.key.
@@ -71,24 +71,20 @@ Example:
     -- This will find the user with the id equal to 2.
     local u = User:find_by_id( 2 )
 
-####model.generate_CRUD( model_name )
+####model.generate\_CRUD( model\_name )
 This will need the model module to be required. Generates a CRUD based on the given model, model must already exist. This function is used in the autogen module and will not correctly intepretate how plurals work in English so you might have to rename some things after the CRUD is created. 
 
  * model_name: string, the name of the model.
 
 Generated files are:
 
-/controller/model_name.lua
+    /controller/model_name.lua
+    /views/model_name/index.lp
+    /views/model_name/create.lp
+    /views/model_name/update.lp
+    /views/model_name/view.lp
 
-/views/model_name/index.lp
-
-/views/model_name/create.lp
-
-/views/model_name/update.lp
-
-/views/model_name/view.lp
-
-####model.generate_model( table_name )
+####model.generate\_model( table\_name )
 This will need the model module to be required. Generates a model based on a given table. This function is used in the autogen module and will not autogenerate model's relations or attributes' rules. A file with the same name of the table will be created under /model.
 
  * table_name, the name of the table
