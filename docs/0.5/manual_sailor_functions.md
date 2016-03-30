@@ -7,7 +7,6 @@ Can be used anywhere in a Sailor web application.
 Creates a url for an internal app route depending on friendly url configuration
  
  * route: string, controller/action or controller.
-
  * params: [optional] table, vars and values to be sent via GET.
 
 Example 1: `sailor.make_url( 'post/view', {id = 5, title = 'Manual'} )`
