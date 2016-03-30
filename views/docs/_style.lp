@@ -36,7 +36,7 @@
 
 <script>
 hljs.configure({
-  languages: ['lua','javascript']
+  languages: ['lua','javascript', 'bash', 'nginx']
 });
 hljs.initHighlightingOnLoad();</script>
 
