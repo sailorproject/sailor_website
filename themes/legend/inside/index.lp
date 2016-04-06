@@ -1,10 +1,5 @@
-<!-- This theme was based on http://www.dzyngiri.com/legend-free-responsive-one-page-template/ open source theme. Thank you! -->
-<style>
-	p { 
-		text-align: justify;
-	}
-</style>
-<!DOCCTYPE HTML>
+<!DOCTYPE HTML>
+    <!-- This theme was based on http://www.dzyngiri.com/legend-free-responsive-one-page-template/ open source theme. Thank you! -->
     <html lang="en">
     <head>
     <meta charset="utf-8">
