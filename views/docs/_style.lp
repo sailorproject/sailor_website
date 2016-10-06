@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/themes/legend/css/custom.css" />
 <style>
   h3{font-weight:bold; font-size: 20px !important;}
   .anchor{ position: relative;top: -35px;}

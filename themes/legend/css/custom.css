@@ -1,0 +1,12 @@
+.doc ul li {
+    list-style-position: inside;
+}
+
+.doc .dir_tree{
+    list-style: none;
+}
+
+.features {
+    list-style-type: "✓ ";
+}
+
