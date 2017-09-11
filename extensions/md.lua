@@ -2,6 +2,7 @@ local M = {}
 
 function M.include_md(path)
     local markdown = require "markdown"
+    local sailor = require "sailor"
     local f = assert (io.open (sailor.path.."/"..path, "rb"))
     local src = f:read("*all")
     f:close()
